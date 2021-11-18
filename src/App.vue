@@ -1,7 +1,7 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <h1>{{ title }}</h1>
-  <Modal header="Sign Up" text="Type your credentials" />
+  <Modal :header="header" :text="text" theme="sale" />
 </template>
 
 <script>
@@ -15,6 +15,8 @@ export default {
   data() {
     return {
       title: "Root Component",
+      header: "Sign Up",
+      text: "Type your credentials",
     };
   },
 };
