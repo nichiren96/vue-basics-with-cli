@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <MyComponent/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <Modal />
 </template>
 
 <script>
-import MyComponent from './components/MyComponent.vue'
+import Modal from "./components/Modal.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MyComponent
-  }
-}
+    Modal,
+  },
+};
 </script>
 
 <style>
