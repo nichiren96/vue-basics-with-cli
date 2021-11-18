@@ -1,7 +1,7 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <h1>Root Component</h1>
-  <Modal />
+  <h1>{{ title }}</h1>
+  <Modal header="Sign Up" text="Type your credentials" />
 </template>
 
 <script>
@@ -11,6 +11,11 @@ export default {
   name: "App",
   components: {
     Modal,
+  },
+  data() {
+    return {
+      title: "Root Component",
+    };
   },
 };
 </script>
